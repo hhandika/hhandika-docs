@@ -1,0 +1,8 @@
+{
+  "label": "Genomics",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Data analysis for Sanger sequencing"
+  }
+}

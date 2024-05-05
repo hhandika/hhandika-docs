@@ -3,12 +3,12 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "Genomic Documentation",
-  tagline: "Helpful resources for genomic studies",
+  title: "Evo Resources",
+  tagline: "Helpful resources for evolutionary studies",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://genomics.hhandika.com",
+  url: "https://evo.hhandika.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -53,7 +53,7 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "Genomic Documentation",
+      title: "Evo Resources",
       logo: {
         alt: "Hhandika site logo",
         src: "img/logo.svg",
@@ -61,9 +61,15 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
-          sidebarId: "tutorialSidebar",
+          sidebarId: "analysis",
           position: "left",
-          label: "Docs",
+          label: "Analyses",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "coding",
+          position: "left",
+          label: "Coding",
         },
         // { to: "/blog", label: "Blog", position: "left" },
         {
@@ -75,47 +81,6 @@ const config: Config = {
     },
     footer: {
       style: "dark",
-      // links: [
-      //   {
-      //     title: "Docs",
-      //     items: [
-      //       {
-      //         label: "Tutorial",
-      //         to: "/docs/intro",
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: "Community",
-      //     items: [
-      //       {
-      //         label: "Stack Overflow",
-      //         href: "https://stackoverflow.com/questions/tagged/docusaurus",
-      //       },
-      //       {
-      //         label: "Discord",
-      //         href: "https://discordapp.com/invite/docusaurus",
-      //       },
-      //       {
-      //         label: "Twitter",
-      //         href: "https://twitter.com/docusaurus",
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: "More",
-      //     items: [
-      //       {
-      //         label: "Blog",
-      //         to: "/blog",
-      //       },
-      //       {
-      //         label: "GitHub",
-      //         href: "https://github.com/facebook/docusaurus",
-      //       },
-      //     ],
-      //   },
-      // ],
       copyright: `Copyright © ${new Date().getFullYear()} Heru Handika.`,
     },
     prism: {
